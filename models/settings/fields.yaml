@@ -1,0 +1,24 @@
+# ===================================
+#  Form Field Definitions
+# ===================================
+
+fields:
+  domain_verification:
+    label: Domain Verification
+    type: section
+
+  url_1:
+    label: Verification URL 1
+    span: left
+
+  response_1:
+    label: Verification Response 1
+    span: right
+
+  url_2:
+    label: Verification URL 2
+    span: left
+
+  response_2:
+    label: Verification Response 2
+    span: right
