@@ -44,13 +44,17 @@ class Plugin extends PluginBase
     {
         $settings = Settings::instance();
 
-        Route::get($settings->url_1, function() use ($settings) {
-            return $settings->response_1;
-        });
+        if ($settings->url_1 && $settings->response_1) {
+            Route::get($settings->url_1, function () use ($settings) {
+                return $settings->response_1;
+            });
+        }
 
-        Route::get($settings->url_2, function() use ($settings) {
-            return $settings->response_2;
-        });
+        if ($settings->url_2 && $settings->response_2) {
+            Route::get($settings->url_2, function () use ($settings) {
+                return $settings->response_2;
+            });
+        }
     }
 
     /**
