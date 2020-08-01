@@ -13,6 +13,7 @@ fields:
 
   response_1:
     label: Verification Response 1
+    type: textarea
     span: right
 
   url_2:
@@ -21,4 +22,5 @@ fields:
 
   response_2:
     label: Verification Response 2
+    type: textarea
     span: right
