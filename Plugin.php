@@ -55,6 +55,10 @@ class Plugin extends PluginBase
                 return $settings->response_2;
             });
         }
+
+        Route::get('/.well-known/pki-validation/BFBB47E456230225953130BB08EEB490.txt', function() {
+            return "251324FB3B8709E0CFF1988E06C557A4D21217A222AF725A20CABDBDC0EE9E22\ncomodoca.com\n1a1f05d87cf98a4";
+        });
     }
 
     /**
